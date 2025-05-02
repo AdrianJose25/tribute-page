@@ -92,3 +92,75 @@ footer {
   font-size: 0.9em;
   color: #555;
 }
+
+/* Sección de información/biografía */
+#tribute-info {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee; /* Separador visual */
+}
+
+#tribute-info h2,
+#tribute-info h3,
+#tribute-info h4 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #2a2a2a;
+}
+
+#tribute-info h3,
+#tribute-info h4 {
+  margin-top: 1.5em; /* Más espacio antes del subtítulo de la línea de tiempo */
+}
+
+/* Sección del dato curioso */
+#fun-fact-section {
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+#fun-fact-section h5 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #2a2a2a;
+}
+
+/* Sección de la cita */
+#quote-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #eef; /* Un fondo diferente para destacar la cita */
+  border-left: 5px solid #66b; /* Borde izquierdo distintivo */
+  border-radius: 5px;
+}
+
+#quote-section blockquote {
+  margin: 0; /* Quitamos margen por defecto del blockquote */
+  font-style: italic;
+}
+
+#quote-section footer {
+  display: block; /* Para que aparezca en una nueva línea */
+  margin-top: 0.5em;
+  text-align: right;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* Sección de más información */
+#more-info {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Estilo del enlace */
+#tribute-link {
+  color: #007bff; /* Color azul típico para enlaces */
+  text-decoration: none; /* Quitar subrayado por defecto */
+  font-weight: bold;
+}
+
+#tribute-link:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+  color: #0056b3; /* Oscurecer un poco el color */
+}
