@@ -66,3 +66,29 @@ footer {
   font-size: 0.9em;
   color: #666;
 }
+
+/* Contenedor de la figura */
+#img-div {
+  margin: 0 auto 20px auto; /* Centrar y dar espacio inferior */
+  padding: 10px;
+  background-color: #f9f9f9; /* Fondo ligeramente diferente */
+  border: 1px solid #eee;
+  border-radius: 5px;
+  text-align: center; /* Centra la imagen si es más pequeña que el contenedor */
+}
+
+/* La imagen */
+#image {
+  max-width: 100%; /* Hace la imagen responsive - nunca más ancha que su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Elimina espacio extra debajo de la imagen */
+  margin: 0 auto; /* Centra la imagen dentro de la figura */
+  border-radius: 5px; /* Bordes redondeados si se desea */
+}
+
+/* Leyenda de la imagen */
+#img-caption {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
