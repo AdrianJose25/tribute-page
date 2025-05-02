@@ -164,3 +164,47 @@ footer {
   text-decoration: underline; /* Subrayado al pasar el ratón */
   color: #0056b3; /* Oscurecer un poco el color */
 }
+
+/* --- Media Queries para Diseño Responsivo --- */
+
+/* Para tablets y móviles grandes (ej. < 768px) */
+@media (max-width: 768px) {
+  #main {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  #title {
+    font-size: 2em; /* Reducir tamaño de fuente */
+  }
+
+  #subtitle {
+    font-size: 1em;
+  }
+
+  /* Puedes ajustar márgenes, padding o tamaños de fuente de otras secciones si es necesario */
+}
+
+/* Para móviles pequeños (ej. < 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; /* Reducir tamaño base puede ayudar en pantallas muy pequeñas */
+  }
+
+  #main {
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 0; /* Quitar bordes redondeados para aprovechar espacio */
+    box-shadow: none; /* Quitar sombra */
+  }
+
+  #title {
+    font-size: 1.8em;
+  }
+
+  #tribute-info ul {
+    padding-left: 15px; /* Reducir padding de la lista */
+  }
+
+  /* Aquí puedes hacer ajustes más específicos si ves que algo se descoloca */
+}
