@@ -19,7 +19,7 @@ body {
 #main {
   max-width: 960px; /* Ancho máximo para mejor lectura en pantallas grandes */
   margin: 30px auto; /* Centra el contenido horizontalmente y añade espacio arriba/abajo */
-  padding: 20px;
+  padding: 20px 50px;
   background-color: #fff; /* Fondo blanco para el contenido principal */
   border-radius: 8px; /* Bordes redondeados suaves */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
@@ -43,9 +43,12 @@ body {
 }
 
 /* Estilos básicos para párrafos y listas */
-p,
 li {
-  margin-bottom: 1em; /* Espacio debajo de párrafos y elementos de lista */
+  margin-bottom: 1em; /* Espacio debajo de elementos de lista */
+}
+
+p {
+  margin-top: 1em; /* Espacio arriba de párrafos */
 }
 
 ul {
