@@ -2,24 +2,24 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Asegura que el padding y el borde no afecten al ancho total */
 }
 
 /* Estilos generales del cuerpo */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Helvetica Neue", Arial, sans-serif; /* Fuentes seguras */
+  font-size: 16px; /* Tamaño de fuente base */
   line-height: 1.6; /* Espaciado de línea para legibilidad */
   color: #333; /* Color de texto principal (oscuro) */
   background-color: #f4f4f4; /* Color de fondo suave */
-  margin: 0; /* Asegura que no haya márgenes por defecto */
 }
 
 /* Contenedor principal */
 #main {
   max-width: 960px; /* Ancho máximo para mejor lectura en pantallas grandes */
   margin: 30px auto; /* Centra el contenido horizontalmente y añade espacio arriba/abajo */
-  padding: 20px 50px;
+  padding: 20px 50px; /* Espacio interno */
   background-color: #fff; /* Fondo blanco para el contenido principal */
   border-radius: 8px; /* Bordes redondeados suaves */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
@@ -27,56 +27,28 @@ body {
 
 /* Encabezado principal */
 #title-section {
-  text-align: center;
-  margin-bottom: 30px;
+  text-align: center; /* alineado de texto al centro */
+  margin-bottom: 30px; /* Espacio debajo del encabezado */
 }
 
 #title {
   font-size: 2.5em; /* Tamaño grande para el título principal */
-  margin-bottom: 0.2em;
-  color: #1a1a1a;
+  margin-bottom: 0.5em; /* Espacio debajo del título */
+  color: #1a1a1a; /* color oscuro para el título */
 }
 
 #subtitle {
-  font-size: 1.1em;
-  color: #555;
-}
-
-/* Estilos básicos para párrafos y listas */
-li {
-  margin-bottom: 1em; /* Espacio debajo de elementos de lista */
-}
-
-p {
-  margin-top: 1em; /* Espacio arriba de párrafos */
-}
-
-ul {
-  list-style-position: inside; /* Posición de los puntos de la lista */
-  padding-left: 20px;
-}
-
-strong {
-  /* Darle un poco más de peso a los años/hitos */
-  font-weight: 600;
-}
-
-/* Pie de página */
-footer {
-  text-align: center;
-  margin-top: 40px;
-  padding: 15px;
-  font-size: 0.9em;
-  color: #666;
+  font-size: 1.2em; /* Tamaño más pequeño para el subtitulo */
+  color: #555; /* Color gris para el subtitulo */
 }
 
 /* Contenedor de la figura */
 #img-div {
-  margin: 0 auto 20px auto; /* Centrar y dar espacio inferior */
-  padding: 10px;
+  margin: 0 auto 40px auto; /* Centrar y dar espacio inferior */
+  padding: 10px; /* Espacio interno */
   background-color: #f9f9f9; /* Fondo ligeramente diferente */
-  border: 1px solid #eee;
-  border-radius: 5px;
+  border: 1px solid #eee; /* Borde suave */
+  border-radius: 5px; /* Bordes redondeados */
   text-align: center; /* Centra la imagen si es más pequeña que el contenedor */
 }
 
@@ -86,81 +58,93 @@ footer {
   height: auto; /* Mantiene la proporción de la imagen */
   display: block; /* Elimina espacio extra debajo de la imagen */
   margin: 0 auto; /* Centra la imagen dentro de la figura */
-  border-radius: 5px; /* Bordes redondeados si se desea */
+  border-radius: 5px; /* Bordes redondeados */
 }
 
 /* Leyenda de la imagen */
 #img-caption {
-  margin-top: 10px;
-  font-size: 0.9em;
-  color: #555;
+  padding: 0.5em; /* Espacio interno */
+  font-size: 0.9em; /* Tamaño de fuente más pequeño */
+  color: #555; /* Color gris para la leyenda */
 }
 
 /* Sección de información/biografía */
 #tribute-info {
-  margin-top: 40px;
-  padding-top: 20px;
+  padding: 10px 0px; /* Espacio interno */
   border-top: 1px solid #eee; /* Separador visual */
 }
 
 #tribute-info h2,
-#tribute-info h3,
-#tribute-info h4 {
-  text-align: center;
-  margin-bottom: 1em;
-  color: #2a2a2a;
+#tribute-info h3 {
+  text-align: center; /* Centrar encabezados */
+  margin-bottom: 1rem; /* Espacio debajo de los encabezados */
+  color: #2a2a2a; /* Color oscuro para los encabezados */
 }
 
-#tribute-info h3,
-#tribute-info h4 {
-  margin-top: 1.5em; /* Más espacio antes del subtítulo de la línea de tiempo */
+/* Estilos básicos para párrafos y listas */
+li {
+  margin-bottom: 1em; /* Espacio debajo de elementos de lista */
+}
+
+li p {
+  text-align: justify;
+  padding: 0.8em 0; /* Espacio interno para párrafos dentro de listas */
+}
+
+ul {
+  list-style-position: inside; /* Posición de los puntos de la lista */
+  padding-left: 20px; /* Espacio a la izquierda */
+  margin-bottom: 20px; /* Espacio debajo de la lista */
+}
+
+strong {
+  font-weight: 600; /* Darle un poco más de peso a los años/hitos */
 }
 
 /* Sección del dato curioso */
 #fun-fact-section {
-  margin-top: 40px;
-  padding-top: 20px;
+  padding: 20px 0; /* Espacio interno */
+  margin-bottom: 20px; /* Espacio debajo de la sección */
 }
 
-#fun-fact-section h5 {
-  text-align: center;
-  margin-bottom: 1em;
-  color: #2a2a2a;
+#fun-fact-section h3 {
+  text-align: center; /* Centrar encabezado */
+  margin-bottom: 1rem; /* Espaciado debajo del encabezado */
+  color: #2a2a2a; /* Color oscuro para el encabezado */
 }
 
 /* Sección de la cita */
 #quote-section {
-  margin-top: 40px;
-  padding: 20px;
+  margin-bottom: 15px; /* Espacio debajo de la sección */
+  padding: 20px; /* Espacio interno */
   background-color: #eef; /* Un fondo diferente para destacar la cita */
   border-left: 5px solid #66b; /* Borde izquierdo distintivo */
-  border-radius: 5px;
+  border-radius: 5px; /* Bordes redondeados */
 }
 
 #quote-section blockquote {
   margin: 0; /* Quitamos margen por defecto del blockquote */
-  font-style: italic;
+  font-style: italic; /* Estilo de cursiva para la cita */
 }
 
 #quote-section footer {
   display: block; /* Para que aparezca en una nueva línea */
-  margin-top: 0.5em;
-  text-align: right;
-  font-style: normal;
-  font-weight: bold;
+  text-align: right; /* Alinear el texto a la derecha */
+  font-style: normal; /* Normalizar el estilo */
+  font-weight: bold; /* Fuente en negrita */
 }
 
 /* Sección de más información */
 #more-info {
-  margin-top: 30px;
-  text-align: center;
+  padding: 10px; /* Espacio interno */
+  text-align: center; /* Centrar el texto */
 }
 
 /* Estilo del enlace */
 #tribute-link {
   color: #007bff; /* Color azul típico para enlaces */
   text-decoration: none; /* Quitar subrayado por defecto */
-  font-weight: bold;
+  font-weight: bold; /* Fuente en negrita */
 }
 
 #tribute-link:hover {
@@ -168,24 +152,30 @@ footer {
   color: #0056b3; /* Oscurecer un poco el color */
 }
 
+/* Pie de página */
+footer {
+  text-align: center; /* Centrar el texto */
+  padding: 20px; /* Espacio interno */
+  font-size: 0.9em; /* Tamaño de fuente más pequeño */
+  color: #666; /* Color gris para el pie de página */
+}
+
 /* --- Media Queries para Diseño Responsivo --- */
 
 /* Para tablets y móviles grandes (ej. < 768px) */
 @media (max-width: 768px) {
   #main {
-    margin: 20px auto;
-    padding: 15px;
+    margin: 20px auto; /* Reducir margen */
+    padding: 15px; /* Reducir padding */
   }
 
   #title {
-    font-size: 2em; /* Reducir tamaño de fuente */
+    font-size: 2em; /* Reducir tamaño de fuente del título */
   }
 
   #subtitle {
-    font-size: 1em;
+    font-size: 1em; /* Reducir tamaño de fuente del subtitulo */
   }
-
-  /* Puedes ajustar márgenes, padding o tamaños de fuente de otras secciones si es necesario */
 }
 
 /* Para móviles pequeños (ej. < 480px) */
@@ -195,17 +185,21 @@ footer {
   }
 
   #main {
-    margin: 10px auto;
-    padding: 10px;
+    margin: 10px auto; /* Reducir margen */
+    padding: 10px; /* Reducir padding */
     border-radius: 0; /* Quitar bordes redondeados para aprovechar espacio */
     box-shadow: none; /* Quitar sombra */
   }
 
   #title {
-    font-size: 1.8em;
+    font-size: 1.8em; /* Reducir tamaño de fuente del título */
   }
 
   #tribute-info ul {
-    padding-left: 15px; /* Reducir padding de la lista */
+    padding: 0 15px; /* Reducir padding de la lista */
+  }
+
+  #fun-fact-section {
+    padding: 10px 0; /* Reducir padding */
   }
 }
